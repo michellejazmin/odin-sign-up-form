@@ -153,25 +153,27 @@ label {
   color: rgb(30, 30, 30);
 }
 
-input[type='text'], input[type='tel'],
-input[type='email'], input[type='password'] {
+input {
   margin: 0;
   padding: .5rem;
-  border: 1px solid #ddd;
+  border: 1px solid #e5e7eb;
   border-radius: 5px;
   font-size: 1rem;
   appearance: none;
 }
 
-input[type='text']:focus, input[type='tel']:focus,
-input[type='email']:focus, input[type='password']:focus {
-  border: 1px solid hsl(150, 183, 115);
+input:focus {
+  outline: 1px solid rgb(29, 78, 216);
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
 }
 
-input[type='text']:invalid, input[type='tel']:invalid,
-input[type='email']:invalid, input[type='password']:invalid {
+.error, input:invalid {
   border: 1px solid rgb(185, 28, 28);
+}
+
+.error-message {
+  color: rgb(185, 28, 28);
+  font-size: .75rem;
 }
 
 button {
